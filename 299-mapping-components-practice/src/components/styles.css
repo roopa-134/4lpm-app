@@ -1,0 +1,25 @@
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  cursor: none; /* Hide the default cursor */
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #333;
+}
+
+.cursor-image {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  pointer-events: none; /* Prevent image from blocking mouse events */
+  transition: transform 0.1s ease-out; /* Smooth transition for movement */
+}
